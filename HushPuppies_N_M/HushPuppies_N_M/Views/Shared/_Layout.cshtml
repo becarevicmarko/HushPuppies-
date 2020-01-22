@@ -9,8 +9,23 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    
-        @RenderBody()
-  
+    <div id="container">
+
+        <header>@Html.Partial("Header")</header>
+
+        <main>
+            <nav>
+                @Html.Partial("Navigation")
+            </nav>
+            <content>
+                @RenderBody()
+            </content>
+
+        </main>
+
+        <footer>
+            @Html.Partial("Fußbereich")
+        </footer>
+    </div>
 </body>
 </html>
