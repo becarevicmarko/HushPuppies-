@@ -1,5 +1,5 @@
 ﻿body {
-    border: 1px solid black;
+    
     background-color: white;
     color: #808080;
 }
@@ -16,6 +16,13 @@ main {
 
 nav {
     min-height: 50px;
+}
+
+.pic1 {
+    width: 500px;
+    height: auto;
+    position: center;
+    margin: 35px 450px;
 }
 
 content {
@@ -58,7 +65,42 @@ li {
         }
 
 
-img {
-    position: center;
-    margin: 20px 450px;
+.s{
+    
+    float:right;
 }
+
+.containerTable{
+    margin: auto 0;
+    text-align: center;
+}
+
+.table1{
+    width: 100%;
+   
+    border-spacing: 20px;
+
+}
+
+tr {
+    
+}
+.bild img{
+ float: left;
+ width: 120px;
+ height: 100px;
+}
+.bild{
+    text-align: left;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+td {
+    
+}
+
+
+
+
+

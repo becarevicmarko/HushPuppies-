@@ -13,5 +13,15 @@ namespace HushPuppies_N_M.Controllers
             return View();
         }
 
+        public ActionResult Arrival()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
     }
 }

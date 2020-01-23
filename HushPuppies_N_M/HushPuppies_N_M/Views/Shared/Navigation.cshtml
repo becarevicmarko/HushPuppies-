@@ -1,7 +1,9 @@
 ﻿<ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#dogs">Dogs</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+    <li>@Html.ActionLink("Home", "index", "home")</li>
+    <li>@Html.ActionLink("Dogs", "dogs", "dog")</li>
+    <li>@Html.ActionLink("Contact", "contact", "home")</li>
+    <li>@Html.ActionLink("Arrival", "arrival", "home")</li>
+    <li class="s">@Html.ActionLink("Registration", "registration", "user")</li>
+    <li class="s">@Html.ActionLink("Login", "login", "user")</li>
 </ul>
 
