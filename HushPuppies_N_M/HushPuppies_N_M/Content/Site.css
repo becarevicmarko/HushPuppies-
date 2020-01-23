@@ -25,6 +25,12 @@ nav {
     margin: 35px 450px;
 }
 
+.pic2 {
+    margin:10px 300px;
+    min-height: 400px;
+    max-width:800px;
+}
+
 content {
     float: left;
     width: 70%;
@@ -95,10 +101,25 @@ tr {
     margin-left: 0px;
     padding: 0px;
 }
+.btnDogs {
+    margin-left: 650px;
+    margin-top: 20px;
 
-td {
-    
+    border-radius: 5px;
+    font-size: large;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
+
+.header1{
+    margin-left: 550px;
+}
+
+#p1{
+    font:bold;
+}
+
 
 
 
