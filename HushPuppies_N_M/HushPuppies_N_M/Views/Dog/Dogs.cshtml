@@ -1,161 +1,75 @@
-﻿@model HushPuppies_N_M.Models.Dog
+﻿@model List<HushPuppies_N_M.Models.Dog>
+
+@using HushPuppies_N_M.Models
+
+@if (Model != null && Model.Count >= 1)
+{
+
+    <table>
+        <thead>
+            <tr>
+                <td colspan="6">Dog</td>
+            </tr>
+            <tr>
+                <td> Vorname </td>
+                <td> Nachname </td>
+                <td> Geburtsdatum </td>
+                <td> Geschlecht </td>
+                <td> Gehalt </td>
+                <td> Abteilung </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Dog d in Model)
+            {
+            <tr>
+                <td> <img class="imageDog" src="@d.Image" /> </td>
+                <td> @d.Name </td>
+                <td> @d.Expirience </td>
+                <td> @d.Birthdate.ToLongDateString() </td>
+                <td> @d.Informations </td>
+                <td> @d.Description </td>
 
 
-<div class="containerTable">
-    <table class="table1">
-        <tr>
-            <td class="bild">
-                <img src="~/Content/images/pitbull.jpg" />
-            </td>
-            <td width="20%;">
-                @Model.Name
-            </td>
-            <td width="10%;">
-                @Model.Expirience
-            </td>
-            <td width="20%;">
-                @Model.Birthdate
-            </td>
-            <td width="20%;">
-                @Model.Informations
-            </td>
-            <td width="20%;">
-                @Model.Description
-            </td>
-        </tr>
-
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/pomeranian.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
-
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/chowchow.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/rottweiler.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/labrador.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/husky.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
-        <tr>
-            <td class="bild">
-
-                <img src="~/Content/images/beagle.jpg" />
-
-            </td>
-            <td>
-                @Model.Name
-            </td>
-            <td>
-                @Model.Expirience
-            </td>
-            <td>
-                @Model.Birthdate
-            </td>
-            <td>
-                @Model.Informations
-            </td>
-            <td>
-                @Model.Description
-            </td>
-        </tr>
+            </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Tabellenfußbereich</td>
+            </tr>
+        </tfoot>
     </table>
-</div>
+}
+
+else
+{
+    <p>
+        No founded Dogs
+    </p>
+}
+
+
+
+
+
+
+
+@*<img src="~/Content/images/pitbull.jpg" />
+
+    <img src="~/Content/images/pomeranian.jpg" />
+
+
+    <img src="~/Content/images/chowchow.jpg" />
+
+
+    <img src="~/Content/images/rottweiler.jpg" />
+
+
+    <img src="~/Content/images/labrador.jpg" />
+
+
+    <img src="~/Content/images/husky.jpg" />
+
+
+    <img src="~/Content/images/beagle.jpg" />*@
