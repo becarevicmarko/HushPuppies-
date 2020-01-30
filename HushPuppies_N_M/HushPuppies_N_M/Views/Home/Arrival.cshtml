@@ -1,29 +1,16 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Google Maps Einbindung</title>
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=IHR_KEY"
-            type="text/javascript"></script>
-    <script type="text/javascript">
-
-        //<![CDATA[
-
-        function load() {
-            if (GBrowserIsCompatible()) {
-                var map = new GMap2(document.getElementById("map"));
-                map.setCenter(new GLatLng(37.4419, -122.1419), 13);
-            }
-        }
-        //]]>
-    </script>
-</head>
-<body onload="load()" onunload="GUnload()">
-    <div id="map" style="width: 500px; height: 300px"></div>
-</body>
-@*  *@
-
-</html>
-
+﻿<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+    <script>
+    (function () {
+            var setting = { "height": 531, "width": 706, "zoom": 16, "queryString": "Block C, Yamuna Vihar, Shahdara, Delhi, Indien", "place_id": "ChIJ2xGpHw38DDkRWq26CXrYH60", "satellite": true, "centerCoord": [28.699498051521623, 77.27770410000001], "cid": "0xad1fd87a09baad5a", "lang": "de", "cityUrl": "/india/new-delhi", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "152173" };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=152173';
+            s.async = true;
+            s.onload = function (e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();</script><a href="https://1map.com/de/map-embed?embed_id=152173">1 Map</a>
+</div>
