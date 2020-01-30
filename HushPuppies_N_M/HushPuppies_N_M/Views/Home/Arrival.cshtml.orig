@@ -1,4 +1,7 @@
-<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+<<<<<<< HEAD
+﻿
+=======
+﻿<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
     <script>
     (function () {
@@ -14,3 +17,4 @@
             to.parentNode.insertBefore(s, to);
         })();</script><a href="https://1map.com/de/map-embed?embed_id=152173">1 Map</a>
 </div>
+>>>>>>> 2d85ab82271b1c427e76479934779888ed32a042
