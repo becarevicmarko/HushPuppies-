@@ -22,7 +22,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>@Html.LabelFor(u => u.Firstname, "Vorname*")</td>
+                <td id="vorname">@Html.LabelFor(u => u.Firstname, "Vorname*")</td>
                 <td>@Html.TextBoxFor(u => u.Firstname, new { required = "required" })</td>
             </tr>
 
@@ -62,11 +62,11 @@
                 <td>@Html.LabelFor(u => u.Password2, "Passwort bestätigen*")</td>
                 <td>@Html.PasswordFor(u => u.Password2)</td>
             </tr>
-
+            SS
             <tr>
                 <td colspan="2" style="text-align:center">
-                    <input type="submit" value="absenden" id="btnSubmit" />
-                    <input type="reset" value="abbrechen" id="btnReset" />
+                    <input class="btnsub" type="submit" value="absenden" id="btnSubmit" />
+                    <input class="btnres" type="reset" value="abbrechen" id="btnReset" />
                 </td>
 
             </tr>
