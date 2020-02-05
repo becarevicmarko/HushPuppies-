@@ -23,9 +23,8 @@ namespace HushPuppies_N_M.Controllers
         [HttpPost]
         public ActionResult Registration(User user)
         {
-            //Parameter user: hier sind die eingeg. Daten des Formulars enthalten 
-
-            //1. Parameter überprüfen 
+           
+         
             if (user == null)
             {
                 return RedirectToAction("Registration");
@@ -39,7 +38,7 @@ namespace HushPuppies_N_M.Controllers
 
             else
             {
-                //nun würden wir die Daten in einer DB-Tabelle abspeichern
+               
 
                 return View("Message", new Message("Registrierung", "Ihre Daten wurden erfolgreich abgespeichert"));
             }
@@ -73,8 +72,7 @@ namespace HushPuppies_N_M.Controllers
             {
                 ModelState.AddModelError("Username", "Benutzername ist ein Pflichtfeld");
             }
-            //Passwordfeld
-            //Richtlinien: min 8 Zeichen lang, mind. 1 Großbuchstabe, min. Sonderzeichen
+            
             if (!CheckPassword(user.Password))
             {
                 ModelState.AddModelError("Password", "Passwort muss min. 8 Zeichen, einen Großbuchstaben, und min. ein Sonderzeichen enthalten");
@@ -112,16 +110,13 @@ namespace HushPuppies_N_M.Controllers
             int count = 0;
             foreach (char c in text)
             {
-                //falls das aktuelle Zeichen ein Großbuchstabe ist 
+                
                 if (char.IsLower(c))
                 {
-                    //Anzahl erhöhen
+                   
                     count++;
                 }
-                //if(c >= 'a'&& c<= 'z' || c== 'ö' ||...)
-                //{
-
-                //}
+               
             }
 
             return count >= minCount;
@@ -132,16 +127,13 @@ namespace HushPuppies_N_M.Controllers
             int count = 0;
             foreach (char c in text)
             {
-                //falls das aktuelle Zeichen ein Kleinbuchstabe ist 
+               
                 if (char.IsUpper(c))
                 {
-                    //Anzahl erhöhen
+                    
                     count++;
                 }
-                //if(c >= 'a'&& c<= 'z' || c== 'ö' ||...)
-                //{
-
-                //}
+                
             }
 
             return count >= minCount;
@@ -156,7 +148,7 @@ namespace HushPuppies_N_M.Controllers
 
                 if (allowedChars.Contains(c))
                 {
-                    //Anzahl erhöhen
+                   
                     count++;
                 }
 

@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+﻿<h1> Arrival </h1>
+
+<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+=======
 
 <h1>Arrival</h1>
 
 
 
 <div  class="maps" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+>>>>>>> 85ac34427f8d7b0bb64c1fd000de23ef21ab36c5
     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
     <script>
     (function () {

@@ -2,43 +2,39 @@
 
 @using HushPuppies_N_M.Models
 
+<h1>Dogs</h1>
+
 @if (Model != null && Model.Count >= 1)
+
 {
 
     <table>
         <thead>
-            <tr>
-                <td colspan="6">Dog</td>
-            </tr>
-            <tr>
-                <td> Vorname </td>
-                <td> Nachname </td>
-                <td> Geburtsdatum </td>
-                <td> Geschlecht </td>
-                <td> Gehalt </td>
-                <td> Abteilung </td>
+            <tr class="dogh">
+                <td></td>
+                <td>Name</td>
+                <td>Difficulty level (max.5)</td>
+                <td>Birthday</td>
+                <td>Informations</td>
+                <td>Description</td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="body1">
             @foreach (Dog d in Model)
             {
             <tr>
-                <td> <img class="imageDog" src="@d.Image" /> </td>
-                <td> @d.Name </td>
-                <td> @d.Expirience </td>
-                <td> @d.Birthdate.ToLongDateString() </td>
-                <td> @d.Informations </td>
-                <td> @d.Description </td>
+                <td width="20%"> <img class="imageDog" src="@d.Image" /> </td>
+                <td width="20%"> @d.Name </td>
+                <td width="20%"> @d.Expirience </td>
+                <td width="20%"> @d.Birthdate.ToLongDateString() </td>
+                <td width="20%"> @d.Informations </td>
+                <td width="20%"> @d.Description </td>
 
 
             </tr>
             }
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6">Tabellenfußbereich</td>
-            </tr>
-        </tfoot>
+        
     </table>
 }
 
@@ -49,27 +45,3 @@ else
     </p>
 }
 
-
-
-
-
-
-
-@*<img src="~/Content/images/pitbull.jpg" />
-
-    <img src="~/Content/images/pomeranian.jpg" />
-
-
-    <img src="~/Content/images/chowchow.jpg" />
-
-
-    <img src="~/Content/images/rottweiler.jpg" />
-
-
-    <img src="~/Content/images/labrador.jpg" />
-
-
-    <img src="~/Content/images/husky.jpg" />
-
-
-    <img src="~/Content/images/beagle.jpg" />*@
