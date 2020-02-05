@@ -120,8 +120,71 @@ tr {
     font:bold;
 }
 
+.maps{
+    margin-top:50px;
+    margin-left:50px;
+    margin-bottom:50px;
+}
 
 
+
+#box {
+
+    float: left;
+    width: 40%;
+    padding-left:100px;
+    
+}
+.con{
+    height:300px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    height:20px;
+    width:auto;
+    }
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.imageDog {
+    float: left;
+    width: 250px;
+    height: 170px;
+    padding-right:50px;
+    padding-bottom:10px;
+}
+
+.body1{
+    margin-top:20px;
+    font-size:20px;
+    font: bold;
+}
+
+.dogh{
+    color:black;
+    font:bolder;
+}
 
 
 
