@@ -10,6 +10,8 @@ namespace HushPuppies_N_M.Models
 
         //properties
         public string Image { get; set; }
+
+        public string Id { get; set; }
         public string Name { get; set; }
 
         public int Expirience { get; set; }
@@ -21,11 +23,12 @@ namespace HushPuppies_N_M.Models
         public string Description { get; set; }
 
         //ctors 
-        public Dog() : this("","", 0, DateTime.MinValue, "", "") { }
+        public Dog() : this("", "","", 0, DateTime.MinValue, "", "") { }
 
-        public Dog(string image, string name, int expirience, DateTime birthdate, string informations, string description)
+        public Dog(string image,string id, string name, int expirience, DateTime birthdate, string informations, string description)
         {
             this.Image = image;
+            this.Id = id;
             this.Name = name;
             this.Expirience = expirience;
             this.Birthdate = birthdate;
