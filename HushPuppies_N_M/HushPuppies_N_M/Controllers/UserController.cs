@@ -38,8 +38,6 @@ namespace HushPuppies_N_M.Controllers
 
             else
             {
-               
-
                 return View("Message", new Message("Registrierung", "Ihre Daten wurden erfolgreich abgespeichert"));
             }
 
