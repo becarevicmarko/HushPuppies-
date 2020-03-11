@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+<<<<<<< HEAD
+namespace HushPuppies_N_M.Models
+=======
+namespace HushPuppies_N_M.Models.DB
+>>>>>>> 2b05aa35cd725485d9eba64caa3cb189fd8d0b15
+{
+    interface IDog
+    {
+        void Open();
+
+        void Close();
+
+<<<<<<< HEAD
+        bool Insert(User user);
+
+        bool Delete(int id);
+
+        void UpdateDogData(int id, User newUserData);
+=======
+        bool Insert(Dog dog);
+
+        bool Delete(int id);
+
+        bool UpdateDogData(int id,Dog newDogData);
+>>>>>>> 2b05aa35cd725485d9eba64caa3cb189fd8d0b15
+
+        List<Dog> GetAllDogs();
+
+        Dog GetDog(int id);
+    }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 2b05aa35cd725485d9eba64caa3cb189fd8d0b15

@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace HushPuppies_N_M.Models
+{
+    public class Dog
+    {
+
+        //properties
+        public string Image { get; set; }
+<<<<<<< HEAD
+        public int ID { get; set; }
+=======
+
+        public string Id { get; set; }
+>>>>>>> 2b05aa35cd725485d9eba64caa3cb189fd8d0b15
+        public string Name { get; set; }
+
+        public int Expirience { get; set; }
+
+        public DateTime Birthdate { get; set; }
+
+        public string Informations { get; set; }
+
+        public string Description { get; set; }
+
+<<<<<<< HEAD
+        //ctors
+        public Dog() : this("", 0, "", 0, DateTime.MinValue, "", "") { }
+
+        public Dog(string image, int id, string name, int expirience, DateTime birthdate, string informations, string description)
+        {
+            this.Image = image;
+            this.ID = id;
+=======
+        //ctors 
+        public Dog() : this("", "","", 0, DateTime.MinValue, "", "") { }
+
+        public Dog(string image,string id, string name, int expirience, DateTime birthdate, string informations, string description)
+        {
+            this.Image = image;
+            this.Id = id;
+>>>>>>> 2b05aa35cd725485d9eba64caa3cb189fd8d0b15
+            this.Name = name;
+            this.Expirience = expirience;
+            this.Birthdate = birthdate;
+            this.Informations = informations;
+            this.Description = description;
+        }
+
+    }
+}
